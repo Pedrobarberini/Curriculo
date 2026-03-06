@@ -34,12 +34,13 @@
 </script>
     <header>
         <h1>Pedro Barberini</h1>
-        <p>Desenvolvedor Web | Front-end & Back-end</p>
+        <p>Software Developer | FullStack</p>
         <nav>
        <a href="#sobre" onclick="scrollToSection('sobre', event)">Sobre</a>
             <a href="#skills" onclick="scrollToSection('skills', event)">Skills</a>
             <a href="#projetos" onclick="scrollToSection('projetos', event)">Projetos</a>
             <a href="#contato" onclick="scrollToSection('contato', event)">Contato</a>
+            <a href="#cursos" onclick="scrollToSection('cursos', event)">Cursos</a>
         </a>
         </nav>
     </header>
@@ -48,134 +49,65 @@
             <img src="Images/Imagem do WhatsApp de 2025-06-20 à(s) 23.46.22_b9fdf048.jpg" alt="Foto de perfil">
             <div class="about-text">
                 <h2>Sobre mim</h2>
-                <p>
-               Olá, meu nome é Pedro Barberini. Sou desenvolvedor de sistemas e atualmente estou cursando o terceiro semestre do curso de Análise e Desenvolvimento de Sistemas.
-
-            Tenho foco em desenvolvimento front-end e aplicações mobile, áreas nas quais busco constantemente aprimorar meus conhecimentos técnicos e habilidades práticas. Sou comprometido com a criação de soluções eficientes, com interfaces intuitivas e alinhadas às boas práticas de usabilidade e performance.
-
-            Estou em constante evolução, sempre em busca de novos aprendizados e desafios que contribuam para meu crescimento profissional e para o sucesso dos projetos nos quais estou envolvido.
-
-            Este portfólio reúne alguns dos trabalhos que desenvolvi ao longo da minha trajetória, demonstrando meu comprometimento, organização e dedicação ao desenvolvimento de software de qualidade.
+              Estudante de Ciência da Computação, com formação anterior em Análise e Desenvolvimento de Sistemas, focado em desenvolvimento de software com Java.
+              Possuo conhecimentos em Programação Orientada a Objetos (POO), estruturas de dados, coleções, tratamento de exceções e lógica de programação.
+              Também tenho experiência com Python para automação e aplicações relacionadas à Inteligência Artificial, além de JavaScript e desenvolvimento web com Vue.js em projetos pessoais.
+              Busco uma oportunidade de estágio em desenvolvimento, onde eu possa aplicar meus conhecimentos em Java, evoluir tecnicamente e contribuir no desenvolvimento de soluções eficientes e escaláveis.
+              Comprometimento, organização e dedicação ao desenvolvimento de software de qualidade.
                 </p>
             </div>
         </section>
-        <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-
-    const menuToggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
-
-    if (menuToggle && sidebar) {
-        menuToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('visible');
-        });
-    }
-
-
-    const skillCourses = {
-        "HTML5": "HTML5 Essencial - FIAP: Construção e desenvolvimento em HTML.",
-        "CSS3": "CSS3 Completo - FIAP: Estilização avançada e responsiva.",
-        "JavaScript": "Alura - JavaScript do Zero ao Avançado: Lógica, DOM, ES6+ e Programação Orientada a Objetos.",
-        "Node.js": "ALURA - Node.js e Express: Backend com JavaScript.",
-        "Git & GitHub": "ALURA - Git e GitHub: Controle de versão e colaboração.",
-        "Figma": "FIAP - Figma para Designers e Devs: Prototipagem e UI/UX.",
-        "SQL": "FIAP - SQL Básico ao Avançado: Consultas e modelagem de dados.",
-        "Python": "FIAP - Python para Iniciantes: Sintaxe, lógica e aplicações.",
-        "Java": "ALURA/FIAP - Java Completo: Orientação a Objetos e aplicações desktop.",
-        "Kotlin": "FIAP/ALURA - Kotlin para Android: Desenvolvimento mobile moderno.",
-        "Jetpack compose": "FIAP/ALURA - Jetpack Compose: UI declarativa para Android.",
-        "Reactjs": "ALURA - React.js Essencial: Componentes, hooks e SPA.",
-        "React Native": "ALURA - React Native: Apps mobile multiplataforma.",
-        "Bootstrap": "FIAP - Bootstrap 5: Layouts responsivos e componentes.",
-        "Vuejs": "ALURA - Vue.js do Básico ao Avançado: Framework progressivo.",
-        "C#": "FIAP - C# e .NET: Desenvolvimento desktop e web.",
-        "TypeScript": "ALURA - TypeScript: JavaScript tipado e escalável.",
-        "Razor": "ALURA - Razor Pages: Desenvolvimento web com C# e ASP.NET.",
-        "Django": "ALURA - Django: Framework web para Python.",
-        "Oracle": "FIAP - Oracle SQL e PL/SQL: Banco de dados relacional.",
-        "PL/SQL": "FIAP - PL/SQL Avançado: Procedimentos, funções e triggers."
-    };
-
-
-    const skillsListContainer = document.querySelector('.skills-list');
-    const popup = document.getElementById('popup');
-    const closeBtn = document.querySelector('.close-btn');
-    
-
-    if (skillsListContainer && popup && closeBtn) {
-        
-
-        document.querySelectorAll('.skills-list span').forEach(function(span) {
-            span.style.cursor = "pointer";
-            span.addEventListener('click', function() {
-                const skill = span.textContent.trim();
-                document.getElementById('popup-title').textContent = skill;
-                document.getElementById('popup-desc').textContent = skillCourses[skill] || "Descrição não disponível.";
-                popup.style.display = "flex";
-            });
-        });
-
-
-        closeBtn.addEventListener('click', function () {
-            closePopup();
-        });
-        
-
-        closeBtn.textContent = "x";
-
-
-        popup.addEventListener('click', function(event) {
-            if (event.target === popup) {
-                closePopup();
-            }
-        });
-    }
-});
-
-
-function closePopup() {
-    const popup = document.getElementById('popup');
-    if (popup) {
-      popup.style.display ="none";
-}
-
-
-
-}</script>
 
         <section class="skills" id="skills">
-            <h2>Skills</h2>
+            <h2>Hard Skills</h2>
             <div class="skills-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>Git & GitHub</span>
-                <span>Figma</span>
-                <span>SQL</span>
-                <span>Python</span>
+                <div class="title" id="titulo">Liguagens</div>
                 <span>Java</span>
+                <span>TypeScript</span>
+                <span>HTML5</span>
+                <span>JavaScript</span>
+                <span>Python</span>
                 <span>Kotlin</span>
+                <span>CSS3</span>
+                <span>Node.js</span>
+                <span>C#</span>
+                
+                <div class="title" id="titulo">Banco de dados</div>
+                <span>SQL</span>
+                <span>Oracle</span>
+                <span>PL/SQL</span>
+
+                <div class="title" id="titulo">Ferramentas e frameworks</div>
+                <span>Git e GitHub</span>
+                <span>Figma</span>
                 <span>Jetpack compose</span>
                 <span>Reactjs</span>
                 <span>React Native</span>
                 <span>Bootstrap</span>
                 <span>Vuejs</span>
-                <span>C#</span>
-                <span>TypeScript</span>
                 <span>Razor</span>
                 <span>Django</span>
-                <span>Oracle</span>
-                <span>PL/SQL</span>
 
-                <div id="popup" class="popup" style="display:none;">
-                    <div class="popup-content">
-                        <span class="close-btn" onclick="closePopup()">&times;</span>
-                        <h3 id="popup-title"></h3>
-                        <p id="popup-desc"></p>
-                </div>
+            </div>
             </section>
+
+        <section class="skills" id="soft-skills">
+            <h2>Soft Skills</h2>
+            <div class="skills-list">
+                <div class="title" id="titulo">Competências Comportamentais</div>
+                <span>Comunicação</span>
+                <span>Trabalho em equipe</span>
+                <span>Pensamento analítico</span>
+                <span>Resolução de problemas</span>
+                <span>Aprendizado contínuo</span>
+                <span>Adaptabilidade</span>
+                <span>Organização</span>
+                <span>Proatividade</span>
+                <span>Gestão de tempo</span>
+                <span>Pensamento crítico</span>
+
+            </div>
+        </section>
 
         <section class="projects" id="projetos">
             <h2>Projetos</h2>
@@ -183,40 +115,90 @@ function closePopup() {
                 <div class="project-card">
                     <h3>Ifinance</h3>
                     <a href="pages\Ifinance.html" target="_blank">Ver Projeto</a>
-                    <p>Uma Fintech desenvolvida com parceria da Ifood para facilitar a compra no aplicativo. Tecnologias usadas: HTML, CSS, JavaScript</p>
+                    <p>Desenvolvimento de uma plataforma Fintech inspirada no ecossistema do iFood, com o objetivo de facilitar o processo de pagamento e organização de compras realizadas no aplicativo. 
+                     O projeto foi focado na criação de uma interface web simples e intuitiva, permitindo visualizar e gerenciar transações de forma prática.
+                      Durante o desenvolvimento, foram aplicados conceitos de desenvolvimento front-end, lógica de programação e criação de interfaces responsivas, utilizando HTML, CSS e JavaScript.</p>
                     <a href="https://github.com/Pedrobarberini/Ifinance-main" target="_blank">Ver no GitHub</a>
                 </div>
 
                 <div class="project-card">
                     <h3>Vagacerta</h3>
                     <a href="pages\vagaCerta.html" target="_blank">Ver Projeto</a>
-                    <p>Desenvolvido para acessibilidade e assistencia ao candidato as vagas de emprego disponiveis. Tecnologias usadas: VueJs, CSS , HTML e JavaScript </p>
+                    <p>Desenvolvido com foco em acessibilidade e inclusão digital, o projeto tem como objetivo facilitar o acesso de candidatos às vagas de emprego disponíveis, 
+                        oferecendo uma plataforma simples e intuitiva para navegação e busca de oportunidades.
+                        A aplicação foi estruturada para melhorar a experiência do usuário, permitindo visualizar vagas, acessar informações relevantes e auxiliar no processo de candidatura. 
+                        Durante o desenvolvimento, foram aplicados conceitos de desenvolvimento front-end,
+                        organização de interface e interatividade, utilizando Vue.js, HTML, CSS e JavaScript para criar uma aplicação web dinâmica e responsiva.</p>
                     <a href="https://github.com/Pedrobarberini/WebVagaCerta" target="_blank">Ver no GitHub</a>
                 </div>
                 
                 <div class="project-card">
-                <h3>Emprega+</h3>
-                <a href="pages\empregaMais.html" target="_blank">Ver Projeto</a>
-                <p>desenvolvido versão mobile do site Emprega+ com parceria do mesmo. Tecnologias usadas: Kotlin, Jetpack Compose</p>
+                    <h3>Emprega+</h3>
+                    <a href="pages\empregaMais.html" target="_blank">Ver Projeto</a>
+                    <p>
+                        Aplicativo desenvolvido como versão mobile da plataforma Emprega+, 
+                        com o objetivo de facilitar o acesso às vagas de emprego diretamente pelo celular. 
+                        A aplicação foi projetada para oferecer uma navegação simples e intuitiva, 
+                        permitindo que os usuários consultem oportunidades de trabalho 
+                        e interajam com a plataforma de forma prática. 
+
+                        Durante o desenvolvimento, foram aplicados conceitos de desenvolvimento mobile 
+                        utilizando Kotlin e Jetpack Compose para criação de interfaces modernas, 
+                        dinâmicas e responsivas para dispositivos Android.
+                    </p>
                     <a href="https://github.com/Pedrobarberini/EmpregaMais-master" target="_blank">Ver no GitHub</a>
                 </div>
 
                 <div class="project-card">
-                <h3>Softtek-Mental</h3>
-                <a href="pages\softtek-mental.html" target="_blank">Ver Projeto</a>
-                <p>Aplicativo criado para assistencia psicologica de funcionarios e trabalhadores. Tecnologias usadas: Typescript , CSS, JavaScript e Reactjs</p>
+                    <h3>Softtek-Mental</h3>
+                    <a href="pages\softtek-mental.html" target="_blank">Ver Projeto</a>
+                    <p>
+                    Aplicativo desenvolvido com o objetivo de oferecer suporte e assistência psicológica 
+                    para funcionários e trabalhadores, promovendo o cuidado com a saúde mental no ambiente profissional. 
+                    A plataforma permite o acesso a recursos de apoio, informações e ferramentas voltadas ao bem-estar emocional, 
+                    facilitando a busca por ajuda e orientação de forma prática e acessível.
+
+                    Durante o desenvolvimento, foram aplicados conceitos de desenvolvimento web moderno, 
+                    utilizando TypeScript, JavaScript, CSS e React.js para criação de uma interface dinâmica, 
+                    responsiva e focada na experiência do usuário.
+                    </p>
                     <a href="https://github.com/Pedrobarberini/softtek-mental" target="_blank">Ver no GitHub</a>
                 </div>
 
                 <div class="project-card">
-                <h3>Hospnow</h3>
-                <a href="pages\hospnow.html" target="_blank">Ver Projeto</a>
-                <p>Aplicativo criado para busca de hospitais conforme convenio . Tecnologias usadas: Html, CSS, Java , JavaScript</p>
+                    <h3>Hospnow</h3>
+                    <a href="pages\hospnow.html" target="_blank">Ver Projeto</a>
+                    <p>
+                    Aplicativo desenvolvido com o objetivo de facilitar a busca por hospitais 
+                    de acordo com o convênio do usuário, permitindo encontrar unidades de saúde 
+                    compatíveis de forma rápida e prática. A aplicação foi projetada para 
+                    oferecer uma navegação simples e intuitiva, auxiliando os usuários na 
+                    localização de hospitais e informações relevantes para atendimento.
+
+                    Durante o desenvolvimento, foram aplicados conceitos de desenvolvimento 
+                    web e integração de funcionalidades utilizando HTML, CSS, Java e 
+                    JavaScript para criação de uma interface funcional e acessível.
+                    </p>
                     <a href="https://github.com/Pedrobarberini/Hospnow" target="_blank">Ver no GitHub</a>
                 </div>
 
             </div>
         </section>
+
+        <section class="courses" id="cursos">
+            <h2>Cursos e Cerficações</h2>
+            <div class="course-card">
+                <div class="skills-list" id="skills">
+                    <a href="https://cursos.alura.com.br/degree/certificate/4ae28bfc-582a-404d-abc2-9f397381c03a?lang" target="_blank"><span>Java POO</span></a>
+                    <a href="https://cursos.alura.com.br/certificate/22d208de-0533-4546-b16d-8bfff13dab85?lang"><span>Java lambda</span></a>
+                    <a href="https://cursos.alura.com.br/certificate/469c79ab-7c0b-421e-bdd7-208366bd6285?lang"><span>Java API</span></a>
+                    <a href="https://cursos.alura.com.br/certificate/d0954aec-d739-413b-9a42-b0a97ef324dc?lang"><span>JavaScript</span></a>
+                    <a href="https://cursos.alura.com.br/certificate/42e402e3-bfe1-4443-b41c-a20d705e1ca9?lang"><span>Java</span></a>
+                    <a href="https://cursos.alura.com.br/certificate/f3ac0a08-6b5f-46ae-8521-1884a6b674c6?lang"><span>Java Listas</span></a>
+                </div>
+            </div>
+        </section>
+
         <section class="contact" id="contato">
             <h2>Contatos</h2>
             <h3>Email: barberinipedro@gmail.com</h3>
