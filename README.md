@@ -1,11 +1,11 @@
 # 🚀 Pedro Barberini — Portfolio
 
-![alt text]({EDF51957-2559-45F2-95DE-6F14E84E774B}.png)
-![alt text]({04EA3470-82DD-410B-AEB6-7141E02E5175}.png)
-![alt text]({8C9D8557-822C-4A3E-A405-B710E19BFFC4}.png)
-![alt text]({475F797C-CE7E-4BFE-B175-A1B22DD82476}.png)
-![alt text]({64C911A6-1803-422A-B806-D0A0FBEA2B94}.png)
-![alt text]({ABEDD3F4-5512-4C3C-9E03-C77B9D98812C}.png)
+![alt text](/Curriculo/Images/{04EA3470-82DD-410B-AEB6-7141E02E5175}.png)
+![alt text](/Curriculo/Images/{475F797C-CE7E-4BFE-B175-A1B22DD82476}.png)
+![alt text](/Curriculo/Images/{8C9D8557-822C-4A3E-A405-B710E19BFFC4}.png)
+![alt text](/Curriculo/Images/{8C9D8557-822C-4A3E-A405-B710E19BFFC4}.png)
+![alt text](/Curriculo/Images/{ABEDD3F4-5512-4C3C-9E03-C77B9D98812C}.png)
+![alt text](/Curriculo/Images/{EDF51957-2559-45F2-95DE-6F14E84E774B}.png)
 
 Portfólio moderno desenvolvido para apresentar meus projetos, habilidades e experiências como desenvolvedor de software.
 
