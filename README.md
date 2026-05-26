@@ -13,11 +13,6 @@ O objetivo deste projeto é transmitir uma identidade profissional forte, modern
 
 - HTML5
 - CSS3
-- JavaScript
-- Vue.js
-- React.js
-- Kotlin
-- Python
 
 ---
 
